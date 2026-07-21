@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync LeetCode
-        uses: joshcai/leetcode-sync@v1.7
+        uses: joshcai/leetcode-sync@v2
         with:
           github-token: ${{ github.token }}
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
+          author-email: 'sharvildkte10@gmail.com'
+          author-name: 'SharvilChavan-10'
